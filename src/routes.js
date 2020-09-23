@@ -11,8 +11,8 @@ import Pokemon from './screens/pokemon';
 const Routes = () => (
     <Router>
       <Stack key="root">
+        <Scene key="pokedex" component={Pokedex} initial hideNavBar/>
         <Scene key="pokemon" component={Pokemon} title="Pokemon" />
-        <Scene key="pokedex" component={Pokedex} />
       </Stack>
     </Router>
   );
