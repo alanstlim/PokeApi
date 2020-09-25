@@ -13,7 +13,7 @@ export const PokeTop = styled.Image `
 `
 export const ContainerDex = styled.View `
     flex: auto
-    background-color: #87CEEB;
+    background-color: #d3edf8;
     margin: 10px;
     border-radius: 10px;
 `

@@ -29,7 +29,7 @@ export default function Pokedex(props) {
                     data={pokemon}
                     numColumns={3}
                     renderItem={({item, index}) =>(
-                        <TouchableOpacity onPress={() => Actions.pokemon({pokeInfo: item.url, title: item.name})}>
+                        <TouchableOpacity onPress={() => Actions.pokemon({pokeInfo: item.url, title: item.name, index: index+1})}>
                             <PokeCard>
                                 <PokeName>{item.name} #{index+1} </PokeName>
                                 <Sprite source={{ uri: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/" + (index +1) + ".png"}}/>     
