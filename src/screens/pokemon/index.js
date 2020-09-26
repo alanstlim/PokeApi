@@ -1,7 +1,7 @@
 import React, { Component, useState, useEffect } from 'react';
 import Axios from 'axios';
-import {FlatList, Text} from 'react-native';
-import {Sprite, BackgroundPoke, Infos, Container, InfoContainer, PokeCard, PokeName, Element, ElementContainer} from './styles';
+import {FlatList} from 'react-native';
+import {Sprite, BackgroundPoke, Infos, MainContainer, Container, InfoContainer, PokeCard, PokeName, Element, ElementContainer} from './styles';
 
 
 export default function Pokemon(props) {
@@ -12,18 +12,17 @@ export default function Pokemon(props) {
 
     async function loadPokemon() {
         const response = await Axios.get(pokeInfo);
-         setPokemon(response.data);
+          setPokemon(response.data);
     }
 
     useEffect(() => {
         loadPokemon();
-        
     }, []);
 
   return (
   
+    <MainContainer>
     <Container>
-
       <PokeCard> 
         <Sprite source={{uri: (typeof pokemon.sprites === "undefined" ? "" : pokemon.sprites.front_default)}}></Sprite>
         <BackgroundPoke source={require('../../assets/backgroundPoke.png')}></BackgroundPoke>
@@ -51,6 +50,8 @@ export default function Pokemon(props) {
         </FlatList>
       </InfoContainer>
     </Container>
+      
+    </MainContainer>
 
   )
 }

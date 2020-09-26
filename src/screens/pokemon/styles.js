@@ -1,10 +1,21 @@
 import styled from 'styled-components/native';
 
-export const Container = styled.View `
-    flex-direction: row;
+
+export const MainContainer = styled.View `
+    flex:auto;
     background-color: #CC0F2F;
-    height: 100%;
 `
+
+export const Container = styled.View `
+    flex:auto;
+    flex-direction: row;
+`
+
+export const ContainerTeste = styled.View `
+    flex:auto;
+    background-color: #FFF;
+`
+
 
 export const PokeCard = styled.View `
     width: 40%;
@@ -14,7 +25,7 @@ export const PokeCard = styled.View `
 
 export const BackgroundPoke = styled.Image`
     width: 100%;
-    height: 70%;
+    height: 75%;
     z-index: 0;
     margin-top: -100%;
 `
@@ -30,7 +41,7 @@ export const InfoContainer = styled.View `
     background-color: #d3edf8;
     border-top-start-radius: 15px;
     border-bottom-left-radius: 15px;
-    margin-top: 15px;
+    margin-top: 25px;
     height: 40%;
 
 `
@@ -58,8 +69,8 @@ export const ElementContainer = styled.View `
     background-color: #fff;
     border-top-start-radius: 15px;
     border-top-end-radius: 15px;
-    height: 100%;
-    margin: 5px;
+    height: 90%;
+    margin: 10px;
     align-items: center;
 `
 export const Element = styled.Text `

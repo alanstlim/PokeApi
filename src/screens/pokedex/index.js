@@ -1,5 +1,5 @@
-import Axios from 'axios';
-import {Actions} from 'react-native-router-flux'
+import api from '../../services/api';
+import {Actions} from 'react-native-router-flux';
 import React, { useState, useEffect } from 'react';
 import { FlatList, TouchableOpacity, StatusBar} from 'react-native';
 import {Container, Sprite, PokeName,  PokeCard, PokeTop, ContainerDex} from './styles';
@@ -10,8 +10,8 @@ export default function Pokedex(props) {
     const [pokemon, setPokemon] = useState([]);
 
     async function loadPokemons() {
-        const response = await Axios.get(`https://pokeapi.co/api/v2/pokemon?limit=151&offset=0`);
-         setPokemon(response.data.results);  
+        const response = await api.get('pokemon?limit=151&offset=0');
+         setPokemon(response.data.results); 
     }
 
     useEffect(() => {
@@ -29,7 +29,7 @@ export default function Pokedex(props) {
                     data={pokemon}
                     numColumns={3}
                     renderItem={({item, index}) =>(
-                        <TouchableOpacity onPress={() => Actions.pokemon({pokeInfo: item.url, title: item.name, index: index+1})}>
+                        <TouchableOpacity onPress={() => Actions.pokemon({pokeInfo: item.url, title: item.name})}>
                             <PokeCard>
                                 <PokeName>{item.name} #{index+1} </PokeName>
                                 <Sprite source={{ uri: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/" + (index +1) + ".png"}}/>     
