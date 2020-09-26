@@ -1,6 +1,6 @@
 # PokeAPi
 
-<img src="https://github.com/alanstlim/testeapi/blob/master/screens.png" alt="drawing" width="700"/>
+<img src="https://github.com/alanstlim/PokeApi/blob/master/screens.png" alt="drawing" width="700"/>
 
 ## Sobre esse projeto
 * Projeto produzido para consumir a API https://pokeapi.co/ e produzir uma Pokedex com as informações escolhidas em React Native.
