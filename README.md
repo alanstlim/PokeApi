@@ -35,6 +35,10 @@ Usar o comando: yarn install (Para instalar as dependências necessárias)
 
 Usar o comando: react-native run-android (Para criar a APK no emulador/dispositivo)
 
+Ou baixe o APK
+
+[PokeAPI.apk](https://drive.google.com/file/d/1n1Q7dQgc5rQ3MzKZUMuqsKhSS13zFAsd/view?usp=sharing)
+
 ## Extensões
 
 [Router-Flux] (https://www.npmjs.com/package/react-native-router-flux)
