@@ -7,14 +7,14 @@
 
 A ideia do aplicativo é:
 
->"Mostrar os pokemons da primeira gerações e informações básicas do mesmo.".
+>"Mostrar os pokémons da primeira gerações e informações básicas dos mesmos.".
 
 ## Funcionalidades
-- [x] Exibir os pokemons das Primeira geração, com Sprite, Nome, e Número da Pokedex.
+- [x] Exibir os pokémons das Primeira geração, com Sprite, Nome, e Número da Pokedex.
   
-- [x] Ao clicar exibir informações do pokemon escolhido.
+- [x] Ao clicar exibir informações do pokémon escolhido.
 
-- [ ] Mudar a cor de acordo com o elemento do pokemon.
+- [ ] Mudar a cor de acordo com o elemento do pokémon.
 
 - [ ] Exibir a árvore de evolução e os requisitos para evoluir.
 
