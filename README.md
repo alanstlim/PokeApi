@@ -1,1 +1,42 @@
-"# testeapi" 
+# PokeAPi
+
+<img src="https://github.com/alanstlim/testeapi/blob/master/screens.png" alt="drawing" width="700"/>
+
+## Sobre esse projeto
+* Projeto produzido para consumir a API https://pokeapi.co/ e produzir uma Pokedex com as informações escolhidas em React Native.
+
+A ideia do aplicativo é:
+
+>"Mostrar os pokemons da primeira gerações e informações básicas do mesmo.".
+
+## Funcionalidades
+- [x] Exibir os pokemons das Primeira geração, com Sprite, Nome, e Número da Pokedex.
+  
+- [x] Ao clicar exibir informações do pokemon escolhido.
+
+- [ ] Mudar a cor de acordo com o elemento do pokemon.
+
+- [ ] Exibir a árvore de evolução e os requisitos para evoluir.
+
+### Portfólio
+
+Este projeto faz parte do meu portfólio pessoal, então, ficarei feliz se você pudesse me fornecer algum feedback sobre o projeto, código, estrutura ou qualquer coisa que você possa relatar que permita-me crescer e melhorar!
+
+Email: alanstlim@gmail.com
+
+LinkedIn: https://www.linkedin.com/in/alanstlim/
+
+
+## Instalar
+
+Basta clonar o projeto, abrir no VSCode (Ou editor de sua preferência)
+
+Usar o comando: yarn install (Para instalar as dependências necessárias)
+
+Usar o comando: react-native run-android (Para criar a APK no emulador/dispositivo)
+
+## Extensões
+
+[Router-Flux] (https://www.npmjs.com/package/react-native-router-flux)
+
+[Poke Api] (https://pokeapi.co/)
